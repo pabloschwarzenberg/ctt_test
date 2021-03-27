@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Nivel0</layout>
+        <layout order="1">Nivel1</layout>
+        <layout order="2">Nivel2 </layout>
+        <layout order="3">Nivel3</layout>
+        <layout order="4">Nivel4</layout>
+        <layout order="5">Nivel5</layout>
+        <layout order="6">Nivel6</layout>
+        <event-sheet order="7">Control_Nivel6</event-sheet>
+        <event-sheet order="8">Control</event-sheet>
+        <event-sheet order="9">Control_Nivel4</event-sheet>
+        <event-sheet order="10">Control_Nivel0</event-sheet>
+        <event-sheet order="11">Control_Nivel1</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/fondo/" />
+        <folder expanded="1" path="animation-folder/Llave/" />
+        <folder expanded="1" path="animation-folder/vida/" />
+        <folder expanded="1" path="animation-folder/Comida/" />
+        <folder expanded="1" path="animation-folder/muro01/" />
+        <folder expanded="1" path="animation-folder/muro02/" />
+        <folder expanded="1" path="animation-folder/muro03/" />
+        <folder expanded="1" path="animation-folder/muro04/" />
+        <folder expanded="1" path="animation-folder/muro05/" />
+        <folder expanded="1" path="animation-folder/muro06/" />
+        <folder expanded="1" path="animation-folder/muro07/" />
+        <folder expanded="1" path="animation-folder/muro08/" />
+        <folder expanded="1" path="animation-folder/plataforma/" />
+        <folder expanded="1" path="animation-folder/muro10/" />
+        <folder expanded="1" path="animation-folder/muro11/" />
+        <folder expanded="1" path="animation-folder/muro12/" />
+        <folder expanded="1" path="animation-folder/muro13/" />
+        <folder expanded="1" path="animation-folder/pacman/" />
+        <folder expanded="1" path="animation-folder/fantasma/" />
+        <folder expanded="1" path="animation-folder/flecha_derecha/" />
+        <folder expanded="1" path="animation-folder/flecha_arriba/" />
+        <folder expanded="1" path="animation-folder/flecha_izquierda/" />
+        <folder expanded="1" path="animation-folder/flecha_abajo/" />
+        <folder expanded="1" path="animation-folder/muro09/" />
+        <folder expanded="1" path="animation-folder/P1_acciones/" />
+        <folder expanded="1" path="animation-folder/P2_acciones/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/muro_rompible/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/muro_fijo/" />
+        <folder expanded="1" path="animation-folder/muro_movible/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/flecha_abajo_fija/" />
+        <folder expanded="1" path="animation-folder/flecha_arriba_fija/" />
+        <folder expanded="1" path="animation-folder/flecha_derecha_fija/" />
+        <folder expanded="1" path="animation-folder/flecha_izquierda_fija/" />
+    </folders-expanded>
+</c2uistate>

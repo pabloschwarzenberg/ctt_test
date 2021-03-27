@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Control</name>
+    <events>
+        <variable constant="0" name="session" sid="955810856331767" static="0" type="text"></variable>
+        <variable constant="0" name="LogEntry" sid="691900100981029" static="0" type="text"></variable>
+        <variable constant="0" name="rut" sid="133623708801040" static="0" type="text"></variable>
+        <event-block sid="950825030648519">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="918664522783897" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="456019948320579" type="P1" />
+                <action id="1" name="Set size" sid="256356943754671" type="P1">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="0" name="Clear" sid="809546920480288" type="P2" />
+                <action id="1" name="Set size" sid="648593050284713" type="P2">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="768214453186126" type="System">
+                    <param id="0" name="Variable">Llave</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="443669573617086" type="Function">
+                    <param id="0" name="Name">&quot;Log&quot;</param>
+                    <param id="1" name="Parameter {n}">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="815240226781740">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="511368639662170" type="flecha_derecha" />
+                <condition id="7" name="Cursor is over object" sid="489555931542063" type="Mouse">
+                    <param id="0" name="Object">P1_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="266875644402870" type="flecha_derecha">
+                    <param id="0" name="X">270</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="461935297638100" type="System">
+                    <param id="0" name="Object to create">flecha_derecha_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P1_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P1_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="541967095303650" type="P1">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">0</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="201573900927302">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="735066861595170" type="flecha_izquierda" />
+                <condition id="7" name="Cursor is over object" sid="309544230158126" type="Mouse">
+                    <param id="0" name="Object">P1_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="385403667918303" type="flecha_izquierda">
+                    <param id="0" name="X">210</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="767334989119572" type="System">
+                    <param id="0" name="Object to create">flecha_izquierda_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P1_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P1_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="836601548874991" type="P1">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">1</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="471549308607294">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="100889096072545" type="flecha_abajo" />
+                <condition id="7" name="Cursor is over object" sid="344335998837808" type="Mouse">
+                    <param id="0" name="Object">P1_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="359714626013384" type="flecha_abajo">
+                    <param id="0" name="X">390</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="208579254719220" type="System">
+                    <param id="0" name="Object to create">flecha_abajo_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P1_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P1_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="317707071873117" type="P1">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">2</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316992804232240">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="264523813242888" type="flecha_arriba" />
+                <condition id="7" name="Cursor is over object" sid="476314996471853" type="Mouse">
+                    <param id="0" name="Object">P1_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="585588284302393" type="flecha_arriba">
+                    <param id="0" name="X">330</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="320988868096057" type="System">
+                    <param id="0" name="Object to create">flecha_arriba_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P1_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P1_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="532191654603807" type="P1">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">3</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="754502098124111">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="440979200474340" type="flecha_derecha" />
+                <condition id="7" name="Cursor is over object" sid="198831390376796" type="Mouse">
+                    <param id="0" name="Object">P2_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="523310977456469" type="flecha_derecha">
+                    <param id="0" name="X">270</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="555629875861357" type="System">
+                    <param id="0" name="Object to create">flecha_derecha_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P2_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P2_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="281132876086877" type="P2">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">0</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="212440717797325">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="722431733496428" type="flecha_izquierda" />
+                <condition id="7" name="Cursor is over object" sid="721488523371260" type="Mouse">
+                    <param id="0" name="Object">P2_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="328627625165768" type="flecha_izquierda">
+                    <param id="0" name="X">210</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="914402021890280" type="System">
+                    <param id="0" name="Object to create">flecha_izquierda_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P2_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P2_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="790136496825992" type="P2">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">1</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="368981416061248">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="947599166117331" type="flecha_abajo" />
+                <condition id="7" name="Cursor is over object" sid="921534453992039" type="Mouse">
+                    <param id="0" name="Object">P2_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="100298382465450" type="flecha_abajo">
+                    <param id="0" name="X">390</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="889588571082522" type="System">
+                    <param id="0" name="Object to create">flecha_abajo_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P2_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P2_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="933750985519188" type="P2">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">2</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="847731625231007">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="209063525266917" type="flecha_arriba" />
+                <condition id="7" name="Cursor is over object" sid="396796204931598" type="Mouse">
+                    <param id="0" name="Object">P2_acciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="506531538276717" type="flecha_arriba">
+                    <param id="0" name="X">330</param>
+                    <param id="1" name="Y">630</param>
+                </action>
+                <action id="-3" name="Create object" sid="425482069964336" type="System">
+                    <param id="0" name="Object to create">flecha_arriba_fija</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">P2_acciones.ImagePointX(0)</param>
+                    <param id="3" name="Y">P2_acciones.ImagePointY(0)</param>
+                </action>
+                <action id="5" name="Push" sid="245228946414575" type="P2">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">3</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="795175255742289">
+            <conditions>
+                <condition id="0" name="On function" sid="503636407861820" type="Function">
+                    <param id="0" name="Name">&quot;Reset&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="260298993953721">
+                    <conditions>
+                        <condition id="-33" name="Pick by comparison" sid="862666413724343" type="System">
+                            <param id="0" name="Object">plataforma</param>
+                            <param id="1" name="Expression">plataforma.UID</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="152710901567815" type="plataforma">
+                            <param id="0" name="X">Function.Param(1)</param>
+                            <param id="1" name="Y">Function.Param(2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="940024751151265">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="759130248612787" type="Keyboard">
+                    <param id="0" name="Key">82</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="916787674772482" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="441109769233438">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="871733440714977" type="fantasma">
+                    <param id="0" name="Object">plataforma</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="124649508030549" type="System" />
+                <action id="0" name="Call function" sid="104201568322494" type="Function">
+                    <param id="0" name="Name">&quot;Log&quot;</param>
+                    <param id="1" name="Parameter {n}">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792637918064020">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="914601773297447" type="System">
+                    <param id="0" name="Interval (seconds)">0.25</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="559757616452108">
+                    <conditions>
+                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="418683061612177" type="fantasma">
+                            <param id="0" name="Object">muro_fijo</param>
+                            <param id="1" name="Offset X">60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="271464263659146" type="fantasma">
+                            <param id="0" name="Object">muro_movible</param>
+                            <param id="1" name="Offset X">60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="956257961756766" type="fantasma">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="352942500086498" type="fantasma">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">60</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="525373312977622" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="471992585929821">
+                    <conditions>
+                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="128172835525458" type="fantasma">
+                            <param id="0" name="Object">muro_fijo</param>
+                            <param id="1" name="Offset X">-60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="257178713175649" type="fantasma">
+                            <param id="0" name="Object">muro_movible</param>
+                            <param id="1" name="Offset X">-60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="167999418552281" type="fantasma">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="312926375137094" type="fantasma">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">-60</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="960244808781175" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="928658769253538">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="957665499146367" type="fantasma">
+                            <param id="0" name="Object">muro_fijo</param>
+                            <param id="1" name="Offset X">60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                        <condition id="9" name="Is overlapping at offset" sid="546069414808443" type="fantasma">
+                            <param id="0" name="Object">muro_movible</param>
+                            <param id="1" name="Offset X">60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="393436099476239" type="fantasma">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="248302726343903">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="736182283404479" type="fantasma">
+                            <param id="0" name="Object">muro_fijo</param>
+                            <param id="1" name="Offset X">-60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                        <condition id="9" name="Is overlapping at offset" sid="861381210533355" type="fantasma">
+                            <param id="0" name="Object">muro_movible</param>
+                            <param id="1" name="Offset X">-60</param>
+                            <param id="2" name="Offset Y">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="395747398711617" type="fantasma">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="405087070793036">
+            <conditions>
+                <condition id="0" name="On function" sid="344657502113150" type="Function">
+                    <param id="0" name="Name">&quot;Mover&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="629168324615630">
+                    <conditions>
+                        <condition id="-33" name="Pick by comparison" sid="277660078711317" type="System">
+                            <param id="0" name="Object">plataforma</param>
+                            <param id="1" name="Expression">plataforma.UID</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="151007813081695" type="plataforma">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Value">Function.Param(1)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="340236182535039">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="819508072544665" type="plataforma">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="673128065703339">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="577707250988834" type="plataforma">
+                                            <param id="0" name="Object">muro_rompible</param>
+                                            <param id="1" name="Offset X">60</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="831158473731722">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="982851587115283" type="System">
+                                                    <param id="0" name="Variable">Llave</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="805140498825980" type="muro_rompible" />
+                                                <action id="-23" name="Move at angle" sid="954789987165282" type="plataforma">
+                                                    <param id="0" name="Angle">0</param>
+                                                    <param id="1" name="Distance">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="240810770373410">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="241133647905312" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="746208239237334">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="249591859780350" type="plataforma">
+                                                    <param id="0" name="Object">muro_movible</param>
+                                                    <param id="1" name="Offset X">60</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="248085982435900" type="muro_movible">
+                                                    <param id="0" name="Object">muro_fijo</param>
+                                                    <param id="1" name="Offset X">60</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-23" name="Move at angle" sid="494077686146720" type="muro_movible">
+                                                    <param id="0" name="Angle">0</param>
+                                                    <param id="1" name="Distance">60</param>
+                                                </action>
+                                                <action id="-23" name="Move at angle" sid="632189040105272" type="plataforma">
+                                                    <param id="0" name="Angle">0</param>
+                                                    <param id="1" name="Distance">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="499686327414793">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="477670625189508" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="767403447017652">
+                                                    <conditions>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="918257535072660" type="plataforma">
+                                                            <param id="0" name="Object">muro_fijo</param>
+                                                            <param id="1" name="Offset X">60</param>
+                                                            <param id="2" name="Offset Y">0</param>
+                                                        </condition>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="838274511523910" type="plataforma">
+                                                            <param id="0" name="Object">muro_movible</param>
+                                                            <param id="1" name="Offset X">60</param>
+                                                            <param id="2" name="Offset Y">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-23" name="Move at angle" sid="162113191155288" type="plataforma">
+                                                            <param id="0" name="Angle">0</param>
+                                                            <param id="1" name="Distance">60</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="984547898855903">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="126104451441357" type="plataforma">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="341387376737863">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="166768331024266" type="plataforma">
+                                            <param id="0" name="Object">muro_rompible</param>
+                                            <param id="1" name="Offset X">-60</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="334100500269700">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="178350492438604" type="System">
+                                                    <param id="0" name="Variable">Llave</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="410006050595686" type="muro_rompible" />
+                                                <action id="-23" name="Move at angle" sid="580056391968492" type="plataforma">
+                                                    <param id="0" name="Angle">0</param>
+                                                    <param id="1" name="Distance">-60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="746250552787528">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="630601220381354" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="237556617892053">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="847563334655880" type="plataforma">
+                                                    <param id="0" name="Object">muro_movible</param>
+                                                    <param id="1" name="Offset X">-60</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="504447575397007" type="muro_movible">
+                                                    <param id="0" name="Object">muro_fijo</param>
+                                                    <param id="1" name="Offset X">-60</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-23" name="Move at angle" sid="936961503498670" type="muro_movible">
+                                                    <param id="0" name="Angle">0</param>
+                                                    <param id="1" name="Distance">-60</param>
+                                                </action>
+                                                <action id="-23" name="Move at angle" sid="996985284939438" type="plataforma">
+                                                    <param id="0" name="Angle">0</param>
+                                                    <param id="1" name="Distance">-60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="798315637670864">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="619797525464005" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="618772576352179">
+                                                    <conditions>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="759147831146997" type="plataforma">
+                                                            <param id="0" name="Object">muro_fijo</param>
+                                                            <param id="1" name="Offset X">-60</param>
+                                                            <param id="2" name="Offset Y">0</param>
+                                                        </condition>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="918786417315931" type="plataforma">
+                                                            <param id="0" name="Object">muro_movible</param>
+                                                            <param id="1" name="Offset X">-60</param>
+                                                            <param id="2" name="Offset Y">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-23" name="Move at angle" sid="507233524677698" type="plataforma">
+                                                            <param id="0" name="Angle">0</param>
+                                                            <param id="1" name="Distance">-60</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="939155157350843">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="823309616336161" type="plataforma">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="549343217914801">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="190878730015590" type="plataforma">
+                                            <param id="0" name="Object">muro_rompible</param>
+                                            <param id="1" name="Offset X">0</param>
+                                            <param id="2" name="Offset Y">60</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="519333513324889">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="128517202777895" type="System">
+                                                    <param id="0" name="Variable">Llave</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="921909031095447" type="muro_rompible" />
+                                                <action id="-23" name="Move at angle" sid="131381006941405" type="plataforma">
+                                                    <param id="0" name="Angle">90</param>
+                                                    <param id="1" name="Distance">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="780149368396064">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="193445587029962" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="162564763420272">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="344989343706503" type="plataforma">
+                                                    <param id="0" name="Object">muro_movible</param>
+                                                    <param id="1" name="Offset X">0</param>
+                                                    <param id="2" name="Offset Y">60</param>
+                                                </condition>
+                                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="544064281228266" type="muro_movible">
+                                                    <param id="0" name="Object">muro_fijo</param>
+                                                    <param id="1" name="Offset X">0</param>
+                                                    <param id="2" name="Offset Y">60</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-23" name="Move at angle" sid="545386799053664" type="muro_movible">
+                                                    <param id="0" name="Angle">90</param>
+                                                    <param id="1" name="Distance">60</param>
+                                                </action>
+                                                <action id="-23" name="Move at angle" sid="576195658137392" type="plataforma">
+                                                    <param id="0" name="Angle">90</param>
+                                                    <param id="1" name="Distance">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="146012720881137">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="915331218316141" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="141702009649690">
+                                                    <conditions>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="515741517884272" type="plataforma">
+                                                            <param id="0" name="Object">muro_fijo</param>
+                                                            <param id="1" name="Offset X">0</param>
+                                                            <param id="2" name="Offset Y">60</param>
+                                                        </condition>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="524068576812261" type="plataforma">
+                                                            <param id="0" name="Object">muro_movible</param>
+                                                            <param id="1" name="Offset X">0</param>
+                                                            <param id="2" name="Offset Y">60</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-23" name="Move at angle" sid="809073040146131" type="plataforma">
+                                                            <param id="0" name="Angle">90</param>
+                                                            <param id="1" name="Distance">60</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="409607839720331">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="243772001799222" type="plataforma">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="573407124372989">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="514285173707892" type="plataforma">
+                                            <param id="0" name="Object">muro_rompible</param>
+                                            <param id="1" name="Offset X">0</param>
+                                            <param id="2" name="Offset Y">-60</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="430467810081017">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="568538353627502" type="System">
+                                                    <param id="0" name="Variable">Llave</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="688446600126424" type="muro_rompible" />
+                                                <action id="-23" name="Move at angle" sid="263577344404260" type="plataforma">
+                                                    <param id="0" name="Angle">90</param>
+                                                    <param id="1" name="Distance">-60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="479139097272907">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="532757812240048" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="861459292021319">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="220254877539342" type="plataforma">
+                                                    <param id="0" name="Object">muro_movible</param>
+                                                    <param id="1" name="Offset X">0</param>
+                                                    <param id="2" name="Offset Y">-60</param>
+                                                </condition>
+                                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="437510776374206" type="muro_movible">
+                                                    <param id="0" name="Object">muro_fijo</param>
+                                                    <param id="1" name="Offset X">0</param>
+                                                    <param id="2" name="Offset Y">-60</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-23" name="Move at angle" sid="509283218540093" type="muro_movible">
+                                                    <param id="0" name="Angle">90</param>
+                                                    <param id="1" name="Distance">-60</param>
+                                                </action>
+                                                <action id="-23" name="Move at angle" sid="724650147987679" type="plataforma">
+                                                    <param id="0" name="Angle">90</param>
+                                                    <param id="1" name="Distance">-60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="214217888918681">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="114190580366995" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="230507218285366">
+                                                    <conditions>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="678657616020880" type="plataforma">
+                                                            <param id="0" name="Object">muro_fijo</param>
+                                                            <param id="1" name="Offset X">0</param>
+                                                            <param id="2" name="Offset Y">-60</param>
+                                                        </condition>
+                                                        <condition id="9" inverted="1" name="Is overlapping at offset" sid="560256257271885" type="plataforma">
+                                                            <param id="0" name="Object">muro_movible</param>
+                                                            <param id="1" name="Offset X">0</param>
+                                                            <param id="2" name="Offset Y">-60</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-23" name="Move at angle" sid="250710640650112" type="plataforma">
+                                                            <param id="0" name="Angle">90</param>
+                                                            <param id="1" name="Distance">-60</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="916495854248218">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="695486251227723" type="plataforma">
+                                    <param id="0" name="Instance variable">tipo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;P1&quot;</param>
+                                </condition>
+                                <condition id="-34" name="Pick by evaluate" sid="657996407079072" type="System">
+                                    <param id="0" name="Object">T1</param>
+                                    <param id="1" name="Expression">plataforma.etiqueta</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="522463394096583" type="T1">
+                                    <param id="0" name="X">plataforma.X-30</param>
+                                    <param id="1" name="Y">plataforma.Y-30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="838739090797248">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="512530231663596" type="plataforma">
+                                    <param id="0" name="Instance variable">tipo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;P2&quot;</param>
+                                </condition>
+                                <condition id="-34" name="Pick by evaluate" sid="309429167681329" type="System">
+                                    <param id="0" name="Object">T2</param>
+                                    <param id="1" name="Expression">plataforma.etiqueta</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="341020588829144" type="T2">
+                                    <param id="0" name="X">plataforma.X-30</param>
+                                    <param id="1" name="Y">plataforma.Y-30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="329264833583369" title="Tiempo">
+            <sub-events>
+                <event-block sid="177252839417600">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="333588865573840" type="System">
+                            <param id="0" name="Interval (seconds)">0.001</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="360950520205571" type="Tiempo">
+                            <param id="0" name="Instance variable">Milisegundos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="439711937265751">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="921376926081543" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="817181921164508" type="Tiempo">
+                            <param id="0" name="Instance variable">Segundos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="234425180618869" type="Tiempo">
+                            <param id="0" name="Instance variable">Milisegundos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="974237566903074">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="123015243246694" type="Tiempo">
+                            <param id="0" name="Instance variable">Segundos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="303065499406730" type="Tiempo">
+                            <param id="0" name="Instance variable">Segundos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="830650975958623" type="Tiempo">
+                            <param id="0" name="Instance variable">Minutos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="967331273523032">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="455561773195470" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="904305476049594" type="Tiempo">
+                    <param id="0" name="Text">Tiempo.Minutos &amp;&quot; : &quot; &amp; Tiempo.Segundos &amp; &quot; : &quot; &amp; Tiempo.Milisegundos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="112367047927152">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="981079468431591" type="plataforma">
+                    <param id="0" name="Object">Llave</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="587169749884447" type="Llave">
+                    <param id="0" name="X">570</param>
+                    <param id="1" name="Y">90</param>
+                </action>
+                <action id="-9" name="Set value" sid="677444493350087" type="System">
+                    <param id="0" name="Variable">Llave</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986976186481578">
+            <conditions>
+                <condition id="0" name="On function" sid="445984959990775" type="Function">
+                    <param id="0" name="Name">&quot;Log&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="714084888901203" type="System">
+                    <param id="0" name="Variable">LogEntry</param>
+                    <param id="1" name="Value">&quot;player=&quot;&amp;rut&amp;&quot;&amp;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="489497997692663" type="System">
+                    <param id="0" name="Variable">LogEntry</param>
+                    <param id="1" name="Value">LogEntry&amp;&quot;session=&quot;&amp;session&amp;&quot;&amp;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="800729490204709" type="System">
+                    <param id="0" name="Variable">LogEntry</param>
+                    <param id="1" name="Value">LogEntry&amp;&quot;level=&quot;&amp;LayoutName&amp;&quot;&amp;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="486424494323893" type="System">
+                    <param id="0" name="Variable">LogEntry</param>
+                    <param id="1" name="Value">LogEntry&amp;&quot;action=&quot;&amp;Function.Param(0)&amp;&quot;&amp;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="818026481325957" type="System">
+                    <param id="0" name="Variable">LogEntry</param>
+                    <param id="1" name="Value">LogEntry&amp;&quot;time=&quot;&amp;str(time)&amp;&quot;&amp;state=[&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="646381679610692">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="441632702319100" type="P1">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="252240691339520" type="System">
+                            <param id="0" name="Variable">LogEntry</param>
+                            <param id="1" name="Value">LogEntry&amp;P1.CurValue&amp;&quot; &quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="502658415659315">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="958977203686230" type="System">
+                            <param id="0" name="First value">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="944378259515173" type="System">
+                            <param id="0" name="Variable">LogEntry</param>
+                            <param id="1" name="Value">LogEntry&amp;&quot;] [&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="334385704572785">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="411880426343664" type="P2">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="829770884020509" type="System">
+                            <param id="0" name="Variable">LogEntry</param>
+                            <param id="1" name="Value">LogEntry&amp;P2.CurValue&amp;&quot; &quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="912871247867921">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="994770817505006" type="System">
+                            <param id="0" name="First value">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="170514365186724" type="System">
+                            <param id="0" name="Variable">LogEntry</param>
+                            <param id="1" name="Value">LogEntry&amp;&quot;]&quot;</param>
+                        </action>
+                        <action id="5" name="Push" sid="278596489510010" type="Log">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Value">LogEntry</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="2" name="Post to URL" sid="866177435012770" type="AJAX">
+                            <param id="0" name="Tag">&quot;log&quot;</param>
+                            <param id="1" name="URL">&quot;https://dashboard.gemusei.org/playerstat/&quot;</param>
+                            <param id="2" name="Data">LogEntry</param>
+                            <param id="3" name="Method">&quot;POST&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,1 @@
+Hola!, este juego tiene como finalidad evaluar tu destreza resolviendo puzles algorítmicos. El objetivo es lograr que los dos bloques verdes colisionen, dándoles instrucciones arrastrando las flechas de movimiento a las columnas marcadas como P1 y P2. Presiona ENTER para que los bloques se muevan y la tecla R si quieres comenzar de nuevo. Que te diviertas!

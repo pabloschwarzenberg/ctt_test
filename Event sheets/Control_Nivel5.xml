@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Control_Nivel5</name>
+    <events>
+        <include>Control</include>
+        <event-block sid="169879636543941">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="110848214218662" type="plataforma">
+                    <param id="0" name="Object">plataforma</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="602275247349529" type="plataforma" />
+                <action id="0" name="Call function" sid="751970302594261" type="Function">
+                    <param id="0" name="Name">&quot;Log&quot;</param>
+                    <param id="1" name="Parameter {n}">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="871538692036633" type="System">
+                    <param id="0" name="Layout">Nivel6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="969338698437453">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="464735592990425" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="573789768458907" type="Function">
+                    <param id="0" name="Name">&quot;Reset&quot;</param>
+                    <param id="1" name="Parameter {n}">469{###}270{###}90</param>
+                </action>
+                <action id="0" name="Call function" sid="855907844046366" type="Function">
+                    <param id="0" name="Name">&quot;Reset&quot;</param>
+                    <param id="1" name="Parameter {n}">474{###}210{###}510</param>
+                </action>
+                <action id="0" name="Call function" sid="865834209989126" type="Function">
+                    <param id="0" name="Name">&quot;Log&quot;</param>
+                    <param id="1" name="Parameter {n}">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="428376601864983">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="622919599994284" type="P1">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="259333770465045" type="Function">
+                            <param id="0" name="Name">&quot;Mover&quot;</param>
+                            <param id="1" name="Parameter {n}">469{###}P1.CurValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="585939475227364">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="901923564828351" type="P2">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="506095999537699" type="Function">
+                            <param id="0" name="Name">&quot;Mover&quot;</param>
+                            <param id="1" name="Parameter {n}">474{###}P2.CurValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

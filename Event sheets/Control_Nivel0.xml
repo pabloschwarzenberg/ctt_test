@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Control_Nivel0</name>
+    <events>
+        <event-block sid="196826558168873">
+            <conditions>
+                <condition id="0" name="On clicked" sid="475347284382978" type="b_start" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="567521512066860">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="875052034967481" type="System">
+                            <param id="0" name="First value">len(t_rut.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="606353841046653" type="System">
+                            <param id="0" name="Variable">rut</param>
+                            <param id="1" name="Value">t_rut.Text</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="975971537694982" type="System">
+                            <param id="0" name="Layout">&quot;Nivel1&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="614112790448397" type="System">
+                            <param id="0" name="Variable">session</param>
+                            <param id="1" name="Value">Browser.ExecJS(&quot;new Date().toISOString()&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="468623781889248">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="261733171763893" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set CSS style" sid="946556089891311" type="t_rut">
+                            <param id="0" name="Property name">&quot;background-color&quot;</param>
+                            <param id="1" name="Value">&quot;red&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
